@@ -1,10 +1,11 @@
 <?php 
-abstract class Speedy_Model_Generic{
+abstract class Speedy_Models_Generic{
 	
 	// the variables that are tracked in 
 	protected $_variables = array();
 	
 	public static abstract function find($id);
+	public static abstract function fetchAll($where = null, $order = null, $limit = null, $page = null);
 	
 	public function __call($name, $arguments){
 		
