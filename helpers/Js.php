@@ -29,6 +29,6 @@ class Speedy_Helpers_Js extends Speedy_Helpers_StaticFiles{
 		$filename = $this->_buildFiles($section);
 
 		// return the script tag
-		return $this->scriptTag('/script/' . $filename);
+		return $this->scriptTag('/scripts/' . $filename);
 	}
 }
